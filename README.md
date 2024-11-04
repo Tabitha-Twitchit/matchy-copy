@@ -2,7 +2,7 @@
 
 # Matchy - A social network for Animals
 
-## Goals
+<!-- ## Goals
  - To work in pairs solving real-world programming problems.
  - To practice creating, accessing and processing data structures, Objects and Arrays, in JavaScript.
  - Practice modeling types of things, animals, using Objects.
@@ -33,7 +33,7 @@ If you don't know any of these concepts, see a Teacher or TA before starting thi
     - or -
     - Hit the F12 key.
     - Hit the CMD + Option + I keys for Mac
- - Preview the `index.html` file to view your animals and their friends! 
+ - Preview the `index.html` file to view your animals and their friends!  -->
 
 # Part 1
 **All work in this section will be done in data.js**

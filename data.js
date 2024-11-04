@@ -12,27 +12,50 @@
 // Step 1 - Object Creation //////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+var animal = {};
 
+animal.species = "cat";
+animal["name"] = "Steve"; 
+animal["noises"] = [];
+
+console.log(animal);
 
 //////////////////////////////////////////////////////////////////////
 // Step 2 - Array Creation ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+var noises = [];
 
+noises[0] = "mew mew";
+noises.unshift("new noise at the front");
+noises.push("prrr");
+noises.push("a noise that should be at the back")
+
+console.log(noises.length);
+console.log(noises[length-1]);
+console.log(noises);
 
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Combining Step 1 and 2 ///////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+animal["noises"] = noises;
+animal["noises"].push("sqwuaaaak!");
 
+console.log(animal);
+console.log(animal["noises"]);
 
 /* *******************************************************************
  * Step 4 - Review
  *
  * 1. What are the different ways you can access properties on objects?
- *
+ *    Dot notation to access literal keys (vs keys as parameters) or bracket
+ *    notation to access them more abstractly. 
+ * 
  * 2. What are the different ways of accessing elements on arrays?
  *
+ * through length or hard coding. 
+ * 
  * *******************************************************************
  */
 
@@ -49,7 +72,34 @@
 // Step 6 - A Collection of Animals //////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+var animals = [];
 
+animals.push(animal);
+
+console.log(animals);
+
+var duck = {
+  species: "duck",
+  name: "jerome",
+  noises: ["quack", "honk", "sneeze", "woosh"]
+}
+
+var squid = {
+  species: "squid",
+  name: "Bill",
+  noises: ["squish", "slurp", "sneeze", "clack"]
+}
+
+var squirrel = {
+  species: "squirrel",
+  name: "P-Nut",
+  noises: ["chirp", "skutter", "scramble", "sneeze"]
+}
+
+animals.push(duck + squid + squirrel);
+
+console.log(animals);
+console.log(animals.length)
 
 //////////////////////////////////////////////////////////////////////
 // Step 7 - Making Friends ///////////////////////////////////////////
