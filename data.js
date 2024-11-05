@@ -96,7 +96,9 @@ var squirrel = {
   noises: ["chirp", "skutter", "scramble", "sneeze"]
 }
 
-animals.push(duck + squid + squirrel);
+animals.push(duck);
+animals.push(squid);
+animals.push(squirrel);
 
 console.log(animals);
 console.log(animals.length)
@@ -105,14 +107,10 @@ console.log(animals.length)
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-
-
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
  * move onto Part 2 in the file called "functions.js"
  */
-
-
 
 //////////////////////////////////////////////////////////////////////
 // DON'T REMOVE THIS CODE ////////////////////////////////////////////

@@ -7,12 +7,22 @@
  *
  * See the README for detailed instructions,
  * and read every instruction carefully.
+ * 
+ * I am going to choose to make the friend list an array because I believe it
+ * will be a homogenous list of object data types, so will not need the complexity
+ * of an object on its own. 
  */
 
 //////////////////////////////////////////////////////////////////////
 // Step 1 - Search ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+var friends = [];
+
+function getRandom(animals){
+    let indexedAnimal = Math.random() * animals.length;
+    return 
+}
 
 
 //////////////////////////////////////////////////////////////////////
