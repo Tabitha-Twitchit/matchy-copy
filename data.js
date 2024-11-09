@@ -106,6 +106,42 @@ console.log(animals.length)
 //////////////////////////////////////////////////////////////////////
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+// I am going to choose to make the friend list an array because I believe it
+// * will be a homogenous list of object or string data types, so will not need the complexity
+// * of an object on its own. 
+// I
+// O
+// C A big constraint seems to be that we can't do everying in one function
+//  They want getRandom to return an index. This makes sense to have a 
+//  reusable random animal index
+
+var friends = [];
+
+function getRandom(animals){
+    let randomIndex = Math.floor(Math.random() * animals.length);
+    
+    return randomIndex;
+}
+
+// once we have this index, we have to take the name value from the object at 
+// the index in animals (iirc, this was put together in prev steps...)
+// and add that to friends.
+function friendsListNamePlace(script){
+    let animalIndex = script(animals);
+    console.log("My animal Index: " + animalIndex);
+    friends.push(animals[animalIndex].name);
+}
+friendsListNamePlace(getRandom);
+console.log("my friends array: " + friends);
+
+function friendsListArrPlace(script){
+    let animalIndex = script(animals);
+    Object.defineProperty(animals[animalIndex], "friends",{value: friends});
+    console.log(animals[animalIndex]); 
+}
+friendsListArrPlace(getRandom);
+// friends.push(animals[indexedAnimal]["name"]);
+
 
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
