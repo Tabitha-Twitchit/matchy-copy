@@ -11,8 +11,6 @@
  *
  */
 
-// const { animals } = require("./data");
-
 //////////////////////////////////////////////////////////////////////
 // Step 1 - Search ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
@@ -22,15 +20,13 @@ function search(arr, animalToSearch){
     console.log(animalToSearch);
     console.log(arr);
 
-    for (let i = 0; i < animals.length; i++ ){
-        if(animals[i].name === animalToSearch){
+    for (let i = 0; i < arr.length; i++ ){
+        if(arr[i].name === animalToSearch){
             // console.log(animals[i]);
-            return animals[i];
-        } else {
-            return null;
-        }
-    }
-
+            return arr[i];
+        } 
+    } 
+    return null;
 }
 
 
