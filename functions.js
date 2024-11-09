@@ -9,31 +9,47 @@
  * and read every instruction carefully.
  * 
  * I am going to choose to make the friend list an array because I believe it
- * will be a homogenous list of object data types, so will not need the complexity
+ * will be a homogenous list of object or string data types, so will not need the complexity
  * of an object on its own. 
  */
+
+// const { animals } = require("./data");
 
 //////////////////////////////////////////////////////////////////////
 // Step 1 - Search ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+// I
+// O
+// C A big constraint seems to be that we can't do everying in one function
+//  They want getRandom to return an index. This makes sense to have a 
+//  reusable random animal index
 
 var friends = [];
 
 function getRandom(animals){
-    // initialize a variable, assigning it a random number
-    // specifically using the "floor" method makes it an int rather than a float
-    // let indexedAnimal = Math.floor(Math.random() * animals.length);
-    // console.log(indexedAnimal);
-    // return indexedAnimal;
-    // I'm hazy here. The instructions specifically say to return an index, but 
-    // this could be done without declaring the variable, and referencing it,
-    // possibly through adding in a return function. Like so:
-    return Math.floor(Math.random() * animals.length);
+    let randomIndex = Math.floor(Math.random() * animals.length);
+    
+    return randomIndex;
 }
-// console.log(indexedAnimal);
 
+// once we have this index, we have to take the name value from the object at 
+// the index in animals (iirc, this was put together in prev steps...)
+// and add that to friends.
+function friendsListNamePlace(script){
+    let animalIndex = script(animals);
+    console.log("My animal Index: " + animalIndex);
+    friends.push(animals[animalIndex].name);
+}
+friendsListNamePlace(getRandom);
+console.log("my friends array: " + friends);
+
+function friendsListArrPlace(script){
+    let animalIndex = script(animals);
+    Object.defineProperty(animals[animalIndex], "friends",{value: friends});
+    console.log(animals[animalIndex]); 
+}
+friendsListArrPlace(getRandom);
 // friends.push(animals[indexedAnimal]["name"]);
-// console.log("my friends array: " + friends);
 
 
 

@@ -102,10 +102,10 @@ Imagine that our website has a profile page for each animal. On this profile pag
  3. [X] Create a variable called `friends` and assign it to the data structure that you chose.
  4. [X] Take a look at the documentation for `Math.random` here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
  5. [X] Write a function called `getRandom` that takes our `animals` array and returns  a random `index` of the input array, using `Math.random`
- 6. [ ] Using a random index from this function that you just created, get a random animal and add its `name` to `friends`.
- 7. [ ] `console.log` `friends`.
- 8. [ ] Using **bracket notation**, add the `friends` list as a **property** also named `friends` on one of the animals in the `animals` array
- 9. [ ] `console.log` your work.
+ 6. [X] Using a random index from this function that you just created, get a random animal and add its `name` to `friends`.
+ 7. [X] `console.log` `friends`.
+ 8. [X] Using **bracket notation**, add the `friends` list as a **property** also named `friends` on one of the animals in the `animals` array
+ 9. [X] `console.log` your work.
  
 ## Step 8 - Take Another Break!!
 
